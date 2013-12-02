@@ -6,12 +6,13 @@
 			{
 				url: 'text.txt',       //обезательный параметр
 				type: 'GET',
-				date: {},
-				dataType: "text",       //json, text......
+				date: {name: 'sasha'},
+				dataType: "jsonp",       //json, text......
 				success: function(){
-					
+
 				},
 				error: function(){
+					console.log(arguments);
 
 				},
 				complete: function(){  //выплниться в любом случае
