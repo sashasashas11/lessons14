@@ -4,12 +4,12 @@
 ;(function($){
 	$.ajax(
 			{
-				url: 'text.txt',       //обезательный параметр
+				url: 'main.css',       //обезательный параметр
 				type: 'GET',
 				date: {name: 'sasha'},
 				dataType: "jsonp",       //json, text......
-				success: function(){
-
+				success: function(result){
+					console.log(result);
 				},
 				error: function(){
 					console.log(arguments);
